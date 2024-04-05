@@ -1,0 +1,55 @@
+body {
+    background-color: #2b8ce1; /* Light blue resembling water bodies */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.mapdiv {
+    width: 30%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.mapdiv path {
+    fill: #52f662; /* Light green resembling land areas */
+    stroke: #000000; /* Dark gray resembling borders */
+    stroke-width: 2px;
+    transition: fill 0.3s;
+}
+
+.mapdiv path:hover {
+    fill: #f13232; /* A shade of gray for hover effect */
+}
+
+.container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 400px;
+    padding: 20px;
+    background-color: rgba(160, 157, 157, 0.8); /* Slightly opaque white for contrast */
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#weatherData {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#weatherData th,
+#weatherData td {
+    padding: 8px;
+    text-align: left;
+}
+
+#weatherData th {
+    background-color: #090909; /* Orange resembling warmth */
+    color: white;
+}
+
+#weatherData tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
